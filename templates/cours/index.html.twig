@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste des cours{% endblock %}
+
+{% block body %}
+<div class="site-section bg-light">
+    <div class="container">
+        <div class="row justify-content-center  mb-5">
+            <div class="col-md-7 text-center">
+                <h3 class="karaH2 text-center">Liste des cours</h3>
+                <p class="mb-5 lead">Voici toutes les cours</p>
+                {% if is_granted('ROLE_ADMIN') %}
+                <h1><a href="{{ path('admin') }}" class="btn btn-block btn-primary">Ajouter un cours</a></h1>
+                {% endif %}
+                <!--
+                <p class="text-center">
+                    <a href="#" class="btn btn-primary custom-prev">Précédt</a>
+                    <a href="#" class="btn btn-primary custom-next">Suivant</a>
+                </p>
+                -->
+            </div>
+
+        </div>
+        <hr>
+        <div class="row">
+            {% for cour in cours %}
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="post-entry-1 h-100">
+                        <div class="post-entry-1-contents">
+                            <h2><a href="{{ asset('/cour/'~cour.id) }}">{{ cour.nom }}</a></h2>
+                            {% if cour.temps < 60 %}
+                            <span class="meta d-inline-block mb-3">En {{ cour.temps }} mn
+                                {% else %}
+                                    <span class="meta d-inline-block mb-3">En {{ (cour.temps/60)|round(1, 'floor') }} h
+                                {% endif %}
+                                    <span class="mx-2">par</span><a href="#">{{ cour.responsable.alias }}</a></span>
+                                <p>{{ cour.description }}</p> </span>
+                            <a href="{{ asset('/cour/'~cour.id) }}" class="btn btn-block btn-primary text-center">Voir</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

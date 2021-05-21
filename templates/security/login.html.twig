@@ -1,0 +1,68 @@
+{% extends 'base.html.twig' %} {% block title %}Log in!{% endblock %} {% block body %}
+    <link rel="stylesheet" href="{{ asset('css/stylesLogin.css')}}">
+    <title>Authentification</title>
+
+    <head>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <!------ Include the above in your HEAD tag ---------->
+    </head>
+
+    <div class="sidenav">
+        <div class="login-main-text">
+            <h2>Connexion</h2>
+            <p><strong>Merci de remplir le formulaire</strong>
+                <br>Vous aurez besoin d'être identifié pour accéder aux fonctionnalités du site </p>
+            <a href="{{ path('home') }}">Acceuil</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="col-md-6 col-sm-12">
+            <div class="login-form">
+                <form method="post">
+                    {% if error %}
+                        <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+                    {% endif %} {% if app.user %}
+                        <div class="mb-3">
+                            Vous êtes déjà connectés en tant que {{ app.user.username }}, <a href="{{ path('logout') }}">Deconnexion</a>
+                        </div>
+                    {% endif %}
+
+                    <!--
+                    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+                    -->
+
+                    <div class="form-group">
+                        <label for="inputEmail">Email</label>
+                        <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" required autofocus>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputPassword">Mot de passe</label>
+                        <input type="password" name="password" id="inputPassword" class="form-control" required>
+                    </div>
+
+                    <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+                    {# Uncomment this section and add a remember_me option below your firewall to activate remember me functionality. See https://symfony.com/doc/current/security/remember_me.html
+
+                            <div class="checkbox mb-3">
+                                <label>
+                                    <input type="checkbox" name="_remember_me"> Remember me
+                                </label>
+                            </div>
+                    #}
+
+                    <button class="btn btn-black" type="submit">
+                        Connection
+                    </button>
+                    <button class="btn btn-black" type="">
+                        <a href="/register">S'inscrire</a>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

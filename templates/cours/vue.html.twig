@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ cour.nom }}{% endblock %}
+
+{% block body %}
+
+    <div class="site-section bg-light">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5 section-2-title">
+                <div class="col-md-6">
+                    <h3 class="karaH2 text-center">{{cour.nom}}</h3>
+                    <span class="meta d-inline-block mb-3">Publié le: {{ cour.date|format_datetime('full','none') }}<span class="mx-2">auteur:</span> <a href="/profile.php/">{{ cour.alias }}</a></span>
+                    <br>
+                    {% if cour.temps < 60 %}
+                        <span>En {{ cour.temps }}<span> Minutes<br></span></span>
+                    {% else %}
+                        <span>En {{ (cour.temps/60)|round(1, 'floor') }}<span> Heures<br></span></span>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="row align-items-stretch">
+                <div class="col-lg-8 col-md-6 mb-5">
+                    <div class="post-entry-1 h-100 person-1">
+
+                        <div class="post-entry-1-contents">
+                            <h2>Description</h2>
+                            <p>{{ cour.description }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="post-entry-1 h-100 person-1">
+
+                        <div class="post-entry-1-contents">
+                            <h2>Inscription</h2>
+                                {% if cour.nb_participants < 5 and  cour.nb_participants > 0%}
+                                    <p>Il ne reste plus que <strong style="color: darkred">{{ cour.nb_participants }}</strong> places pour ce cours</p>
+                                {% elseif cour.nb_participants >= 5 %}
+                                    <p>Il reste <strong style="">{{ cour.nb_participants }}</strong> places pour ce cours</p>
+                                {% elseif cour.nb_participants <= 0 %}
+                                    <p>Il reste <strong style="">plus de places</strong> places pour ce cours</p>
+                                {% endif %}
+                                {% if status == -1 %}
+                                    <p style="color: darkred">Vous devez être connectés pour vous inscrire</p>
+                                    {% elseif status == 0 %}
+                                        <p>Vous êtes déjà inscrits</p>
+                                        <p><a href="{{ asset('cours/des/'~cour.id) }}" class="btn btn-primary">Se désinscrire</a></p>
+                                    {% elseif status == 1 %}
+                                        {% if cour.nb_participants > 0 %}
+                                            <p><a href="{{ asset('cours/ins/'~cour.id) }}"class="btn btn-primary">S'inscrire</a></p>
+                                        {% endif %}
+                                {% endif %}
+                            <!--<h1><a href="" class="btn btn-block btn-primary">Ajouter une recette</a></h1>-->
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+{% endblock %}

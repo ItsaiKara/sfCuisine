@@ -1,0 +1,40 @@
+[
+  {
+    "id": 46,
+    "nom": "Entrée",
+    "recettes": [
+      "/api/recettes/282",
+      "/api/recettes/283",
+      "/api/recettes/284",
+      "/api/recettes/285",
+      "/api/recettes/286",
+      "/api/recettes/287",
+      "/api/recettes/288"
+    ]
+  },
+  {
+    "id": 47,
+    "nom": "Plat",
+    "recettes": [
+      "/api/recettes/296",
+      "/api/recettes/297",
+      "/api/recettes/298",
+      "/api/recettes/299",
+      "/api/recettes/300",
+      "/api/recettes/301"
+    ]
+  },
+  {
+    "id": 48,
+    "nom": "Dessert",
+    "recettes": [
+      "/api/recettes/289",
+      "/api/recettes/290",
+      "/api/recettes/291",
+      "/api/recettes/292",
+      "/api/recettes/293",
+      "/api/recettes/294",
+      "/api/recettes/295"
+    ]
+  }
+]

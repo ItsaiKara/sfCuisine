@@ -1,0 +1,215 @@
+[
+  {
+    "id": 186,
+    "nom": "Cours de 0",
+    "description": "Description lorem ipsum 0",
+    "responsable": "/api/users/83",
+    "date": "2021-04-28T00:00:00+02:00",
+    "temps": 0,
+    "nbParticipants": 1,
+    "inscriptions": []
+  },
+  {
+    "id": 187,
+    "nom": "Cours de 1",
+    "description": "Description lorem ipsum 1",
+    "responsable": "/api/users/83",
+    "date": "2021-04-28T00:00:00+02:00",
+    "temps": 10,
+    "nbParticipants": 25,
+    "inscriptions": []
+  },
+  {
+    "id": 188,
+    "nom": "Cours de 2",
+    "description": "Description lorem ipsum 2",
+    "responsable": "/api/users/83",
+    "date": "2021-04-28T00:00:00+02:00",
+    "temps": 20,
+    "nbParticipants": 11,
+    "inscriptions": []
+  },
+  {
+    "id": 189,
+    "nom": "Cours de 3",
+    "description": "Description lorem ipsum 3",
+    "responsable": "/api/users/83",
+    "date": "2021-04-28T00:00:00+02:00",
+    "temps": 30,
+    "nbParticipants": 22,
+    "inscriptions": []
+  },
+  {
+    "id": 190,
+    "nom": "Cours de 4",
+    "description": "Description lorem ipsum 4",
+    "responsable": "/api/users/83",
+    "date": "2021-04-28T00:00:00+02:00",
+    "temps": 40,
+    "nbParticipants": 8,
+    "inscriptions": []
+  },
+  {
+    "id": 191,
+    "nom": "Cours de 5",
+    "description": "Description lorem ipsum 5",
+    "responsable": "/api/users/83",
+    "date": "2021-04-28T00:00:00+02:00",
+    "temps": 50,
+    "nbParticipants": 11,
+    "inscriptions": []
+  },
+  {
+    "id": 192,
+    "nom": "Cours de 6",
+    "description": "Description lorem ipsum 6",
+    "responsable": "/api/users/83",
+    "date": "2021-04-28T00:00:00+02:00",
+    "temps": 60,
+    "nbParticipants": 3,
+    "inscriptions": []
+  },
+  {
+    "id": 193,
+    "nom": "Cours de 7",
+    "description": "Description lorem ipsum 7",
+    "responsable": "/api/users/83",
+    "date": "2021-04-28T00:00:00+02:00",
+    "temps": 70,
+    "nbParticipants": 7,
+    "inscriptions": []
+  },
+  {
+    "id": 194,
+    "nom": "Cours de 8",
+    "description": "Description lorem ipsum 8",
+    "responsable": "/api/users/83",
+    "date": "2021-04-28T00:00:00+02:00",
+    "temps": 80,
+    "nbParticipants": 21,
+    "inscriptions": []
+  },
+  {
+    "id": 195,
+    "nom": "Cours de 9",
+    "description": "Description lorem ipsum 9",
+    "responsable": "/api/users/83",
+    "date": "2021-04-28T00:00:00+02:00",
+    "temps": 90,
+    "nbParticipants": 16,
+    "inscriptions": []
+  },
+  {
+    "id": 196,
+    "nom": "Cours de 10",
+    "description": "Description lorem ipsum 10",
+    "responsable": "/api/users/83",
+    "date": "2021-04-28T00:00:00+02:00",
+    "temps": 100,
+    "nbParticipants": 9,
+    "inscriptions": []
+  },
+  {
+    "id": 197,
+    "nom": "Cours de 11",
+    "description": "Description lorem ipsum 11",
+    "responsable": "/api/users/83",
+    "date": "2021-04-28T00:00:00+02:00",
+    "temps": 110,
+    "nbParticipants": 3,
+    "inscriptions": []
+  },
+  {
+    "id": 198,
+    "nom": "Cours de 12",
+    "description": "Description lorem ipsum 12",
+    "responsable": "/api/users/83",
+    "date": "2021-04-28T00:00:00+02:00",
+    "temps": 120,
+    "nbParticipants": 21,
+    "inscriptions": []
+  },
+  {
+    "id": 199,
+    "nom": "Cours de 13",
+    "description": "Description lorem ipsum 13",
+    "responsable": "/api/users/83",
+    "date": "2021-04-28T00:00:00+02:00",
+    "temps": 130,
+    "nbParticipants": 17,
+    "inscriptions": []
+  },
+  {
+    "id": 200,
+    "nom": "Cours de 14",
+    "description": "Description lorem ipsum 14",
+    "responsable": "/api/users/83",
+    "date": "2021-04-28T00:00:00+02:00",
+    "temps": 140,
+    "nbParticipants": 13,
+    "inscriptions": []
+  },
+  {
+    "id": 201,
+    "nom": "Cours de 15",
+    "description": "Description lorem ipsum 15",
+    "responsable": "/api/users/83",
+    "date": "2021-04-28T00:00:00+02:00",
+    "temps": 150,
+    "nbParticipants": 25,
+    "inscriptions": []
+  },
+  {
+    "id": 202,
+    "nom": "Cours de 16",
+    "description": "Description lorem ipsum 16",
+    "responsable": "/api/users/83",
+    "date": "2021-04-28T00:00:00+02:00",
+    "temps": 160,
+    "nbParticipants": 6,
+    "inscriptions": []
+  },
+  {
+    "id": 203,
+    "nom": "Cours de 17",
+    "description": "Description lorem ipsum 17",
+    "responsable": "/api/users/83",
+    "date": "2021-04-28T00:00:00+02:00",
+    "temps": 170,
+    "nbParticipants": 10,
+    "inscriptions": []
+  },
+  {
+    "id": 204,
+    "nom": "Cours de 18",
+    "description": "Description lorem ipsum 18",
+    "responsable": "/api/users/83",
+    "date": "2021-04-28T00:00:00+02:00",
+    "temps": 180,
+    "nbParticipants": 13,
+    "inscriptions": []
+  },
+  {
+    "id": 205,
+    "nom": "Cours de 19",
+    "description": "Description lorem ipsum 19",
+    "responsable": "/api/users/83",
+    "date": "2021-04-28T00:00:00+02:00",
+    "temps": 190,
+    "nbParticipants": 25,
+    "inscriptions": []
+  },
+  {
+    "id": 206,
+    "nom": "Cours d'ins",
+    "description": "Description lorem ipsum ",
+    "responsable": "/api/users/84",
+    "date": "2021-04-28T00:00:00+02:00",
+    "temps": 10,
+    "nbParticipants": 3,
+    "inscriptions": [
+      "/api/inscriptions/21",
+      "/api/inscriptions/22"
+    ]
+  }
+]

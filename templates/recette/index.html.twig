@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste des recettes{% endblock %}
+
+{% block body %}
+<div class="site-section bg-light">
+    <div class="container">
+        <div class="row justify-content-center  mb-5">
+            <div class="col-md-7 text-center">
+                <h3 class="karaH2 text-center">Liste des recettes</h3>
+                <p class="mb-5 lead">Voici toutes les recettes</p>
+                {% if is_granted('ROLE_ADMIN') %}
+                <h1><a href="{{ path('admin') }}" class="btn btn-block btn-primary">Ajouter une recette</a></h1>
+                {% endif %}
+                <!--
+                <p class="text-center">
+                    <a href="#" class="btn btn-primary custom-prev">Précédt</a>
+                    <a href="#" class="btn btn-primary custom-next">Suivant</a>
+                </p>
+                -->
+            </div>
+
+        </div>
+        <hr>
+        <div class="row">
+            {% for recette in recettes %}
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="post-entry-1 h-100">
+                        <a href="{{ asset('/recette/'~recette.id) }}">
+                            <img src="{{ asset('/images/recette/'~recette.image) }}" alt="{{ recette.image }}" class="img-fluid">
+                        </a>
+                        <div class="post-entry-1-contents">
+                            <h2><a href="{{ asset('/recette/'~recette.id) }}">{{ recette.nom }}</a></h2>
+                            {% if recette.temps < 60 %}
+                            <span class="meta d-inline-block mb-3">En {{ recette.temps }} mn
+                                {% else %}
+                                    <span class="meta d-inline-block mb-3">En {{ (recette.temps/60)|round(1, 'floor') }} h
+                                {% endif %}
+                                    <span class="mx-2">par</span><a href="#">{{ recette.autheur.alias }}</a></span>
+                                <p>{{ recette.description }}</p> </span>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

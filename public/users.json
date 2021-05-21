@@ -1,0 +1,133 @@
+[
+  {
+    "id": 83,
+    "email": "mail@admin1",
+    "roles": [
+      "ROLE_USER",
+      "ROLE_ADMIN"
+    ],
+    "password": "$argon2id$v=19$m=65536,t=4,p=1$/nq/08HpqYYNNWE1eJ80mw$enn2e3YHyMOYZuzlwoKC/HlZ+cCKdzPB5pBnOEb7zgU",
+    "recettes": [],
+    "alias": "Dikxionaire",
+    "cours": [
+      "/api/cours/186",
+      "/api/cours/187",
+      "/api/cours/188",
+      "/api/cours/189",
+      "/api/cours/190",
+      "/api/cours/191",
+      "/api/cours/192",
+      "/api/cours/193",
+      "/api/cours/194",
+      "/api/cours/195",
+      "/api/cours/196",
+      "/api/cours/197",
+      "/api/cours/198",
+      "/api/cours/199",
+      "/api/cours/200",
+      "/api/cours/201",
+      "/api/cours/202",
+      "/api/cours/203",
+      "/api/cours/204",
+      "/api/cours/205"
+    ],
+    "inscriptions": [],
+    "username": "mail@admin1"
+  },
+  {
+    "id": 84,
+    "email": "mail@adminIns",
+    "roles": [
+      "ROLE_USER",
+      "ROLE_ADMIN"
+    ],
+    "password": "$argon2id$v=19$m=65536,t=4,p=1$/nq/08HpqYYNNWE1eJ80mw$enn2e3YHyMOYZuzlwoKC/HlZ+cCKdzPB5pBnOEb7zgU",
+    "recettes": [],
+    "alias": "Inscripteur",
+    "cours": [
+      "/api/cours/206"
+    ],
+    "inscriptions": [
+      "/api/inscriptions/21"
+    ],
+    "username": "mail@adminIns"
+  },
+  {
+    "id": 85,
+    "email": "mail@adminIns2",
+    "roles": [
+      "ROLE_USER",
+      "ROLE_ADMIN"
+    ],
+    "password": "$argon2id$v=19$m=65536,t=4,p=1$/nq/08HpqYYNNWE1eJ80mw$enn2e3YHyMOYZuzlwoKC/HlZ+cCKdzPB5pBnOEb7zgU",
+    "recettes": [],
+    "alias": "Inscripteur2",
+    "cours": [],
+    "inscriptions": [
+      "/api/inscriptions/22"
+    ],
+    "username": "mail@adminIns2"
+  },
+  {
+    "id": 86,
+    "email": "mail@us1",
+    "roles": [
+      "ROLE_USER"
+    ],
+    "password": "$argon2id$v=19$m=65536,t=4,p=1$/nq/08HpqYYNNWE1eJ80mw$enn2e3YHyMOYZuzlwoKC/HlZ+cCKdzPB5pBnOEb7zgU",
+    "recettes": [
+      "/api/recettes/292",
+      "/api/recettes/293",
+      "/api/recettes/294",
+      "/api/recettes/295",
+      "/api/recettes/296",
+      "/api/recettes/297",
+      "/api/recettes/298",
+      "/api/recettes/299",
+      "/api/recettes/300",
+      "/api/recettes/301"
+    ],
+    "alias": "Alfred Stolfo",
+    "cours": [],
+    "inscriptions": [],
+    "username": "mail@us1"
+  },
+  {
+    "id": 87,
+    "email": "mail@us2",
+    "roles": [
+      "ROLE_USER"
+    ],
+    "password": "$argon2id$v=19$m=65536,t=4,p=1$/nq/08HpqYYNNWE1eJ80mw$enn2e3YHyMOYZuzlwoKC/HlZ+cCKdzPB5pBnOEb7zgU",
+    "recettes": [
+      "/api/recettes/282",
+      "/api/recettes/283",
+      "/api/recettes/284",
+      "/api/recettes/285",
+      "/api/recettes/286",
+      "/api/recettes/287",
+      "/api/recettes/288",
+      "/api/recettes/289",
+      "/api/recettes/290",
+      "/api/recettes/291"
+    ],
+    "alias": "Argyle Failyx",
+    "cours": [],
+    "inscriptions": [],
+    "username": "mail@us2"
+  },
+  {
+    "id": 88,
+    "email": "mail@root",
+    "roles": [
+      "ROLE_ADMIN",
+      "ROLE_USER"
+    ],
+    "password": "$argon2id$v=19$m=65536,t=4,p=1$/nq/08HpqYYNNWE1eJ80mw$enn2e3YHyMOYZuzlwoKC/HlZ+cCKdzPB5pBnOEb7zgU",
+    "recettes": [],
+    "alias": "Admin",
+    "cours": [],
+    "inscriptions": [],
+    "username": "mail@root"
+  }
+]

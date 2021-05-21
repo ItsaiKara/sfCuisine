@@ -1,0 +1,12 @@
+[
+  {
+    "id": 21,
+    "user": "/api/users/84",
+    "cours": "/api/cours/206"
+  },
+  {
+    "id": 22,
+    "user": "/api/users/85",
+    "cours": "/api/cours/206"
+  }
+]

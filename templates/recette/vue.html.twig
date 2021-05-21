@@ -1,0 +1,70 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste des recettes{% endblock %}
+
+{% block body %}
+    <style>
+
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+    <div class="site-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="img-years">
+                        <img src="{{ asset('/images/recette/'~recette.image) }}" alt="{{ imgs }}{{ recette.image }}" class="img-fluid">
+                        <div class="year">
+                            {% if recette.temps < 60 %}
+                                <span>{{ recette.temps }}<span>Minutes<br>de préparation</span></span>
+                            {% else %}
+                                <span>{{ (recette.temps/60)|round(1, 'floor') }}<span>Heures<br>de préparation</span></span>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 ml-auto pl-lg-5 text-center">
+                    <h3 class="karaH2 text-center">{{ recette.nom }}</h3> <span class="meta d-inline-block mb-3">Publié le: {{ recette.date|format_datetime('full','none') }}<span class="mx-2">auteur:</span> <a href="/profile.php/">{{ recette.alias }}</a></span>
+                    <p class="mb-5 lead">{{ recette.description }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="site-section bg-light">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5 section-2-title">
+                <div class="col-md-6">
+                    <h3 class="karaH2 text-center">Étapes a suivre:</h3>
+                </div>
+            </div>
+            <div class="row align-items-stretch">
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="post-entry-1 h-100 person-1">
+                        <div class="post-entry-1-contents">
+                            <h2>Ingrédients</h2>
+                            {% for key,val in recette.ingredients %}
+                            <p>{{ val }}</p>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6 mb-5">
+                    <div class="post-entry-1 h-100 person-1">
+                        <div class="post-entry-1-contents">
+                            <h2>Étapes</h2>
+                            {% for key,val in recette.etapes %}
+                                <p>{{ val }}</p>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-section bg-light">
+            <div class="container">
+            </div>
+        </div>
+    </div>
+{% endblock %}
